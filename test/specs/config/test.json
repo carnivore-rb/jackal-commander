@@ -1,0 +1,27 @@
+{
+  "jackal": {
+    "require": [
+      "carnivore-actor",
+      "jackal-commander"
+    ],
+    "commander": {
+      "config": {
+        "actions": {
+          "toucher": "touch /tmp/.jackal-commander-test/touched",
+          "toucher2": "touch /tmp/.jackal-commander-test/touched2",
+          "toucher3": "touch /tmp/.jackal-commander-test/touched3",
+          "remover": "rm -f /tmp/.jackal-commander-test/touched",
+          "custom_touch": "touch"
+        }
+      },
+      "sources": {
+        "input": {
+          "type": "actor"
+        }
+      },
+      "callbacks": [
+        "Jackal::Commander::Executor"
+      ]
+    }
+  }
+}
