@@ -83,6 +83,7 @@ module Jackal
               error "Failed action exit code (#{action}): #{process.exit_code}"
               error "STDOUT (#{action}): #{stdout.read.gsub("\n", '')}"
               error "STDERR (#{action}): #{stderr.read.gsub("\n", '')}"
+              raise "Execution of action `#{action}` failed! (#{message})"
             end
             [action, {:exit_code => process.exit_code}]
           end
