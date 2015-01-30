@@ -88,5 +88,5 @@ Define the action within the configuration:
 
 ## Info
 
-* Repository: https://github.com/carnviore-rb/jackal-cfn
+* Repository: https://github.com/carnviore-rb/jackal-commander
 * IRC: Freenode @ #carnivore
