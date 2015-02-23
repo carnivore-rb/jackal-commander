@@ -5,7 +5,6 @@ describe Jackal::Commander::Executor do
 
   before do
     FileUtils.mkdir_p('/tmp/.jackal-commander-test')
-    #https://github.com/carnivore-rb/jackal/blob/master/lib/jackal/utils/spec/helpers.rb
     @runner = run_setup(:test)
   end
 
